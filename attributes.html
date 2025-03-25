@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements with Attributes</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="main-header" class="header-style">
+        <h1 data-info="Welcome Message">Welcome to HTML5 Attributes Demo</h1>
+        <p>Your one-stop guide to exploring attributes.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#about" title="Learn about HTML5">About</a></li>
+            <li><a href="#features" title="Discover HTML5 Features">Features</a></li>
+            <li><a href="#contact" title="Contact Us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="about" class="content-section">
+            <h2>About HTML5</h2>
+            <p contenteditable="true">HTML5 is the latest version of HTML for creating modern web pages.</p>
+        </section>
+
+        <section id="features" class="content-section">
+            <h2>Features of HTML5</h2>
+            <ul>
+                <li tabindex="0">Semantic Tags (e.g., `<section>`, `<article>`)</li>
+                <li tabindex="1">Multimedia Support (e.g., `<audio>`, `<video>`)</li>
+                <li tabindex="2">Improved Form Elements</li>
+            </ul>
+        </section>
+
+        <section id="table-section" class="content-section">
+            <h2>Data Representation</h2>
+            <p>The table below showcases structured data with attributes:</p>
+            <table border="1" summary="A table of employee details">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Role</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>28</td>
+                    <td>Developer</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>32</td>
+                    <td>Designer</td>
+                </tr>
+            </table>
+        </section>
+
+        <aside id="fact-box">
+            <h3>Quick Fact</h3>
+            <p>HTML5 attributes enhance interactivity and functionality.</p>
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="main-footer" class="footer-style" data-year="2025">
+        <p>&copy; 2025 HTML5 Attributes Demo. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@example.com" target="_blank" rel="noopener noreferrer">info@example.com</a></p>
+    </footer>
+</body>
+</html>
