@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Feedback Survey</h2>
+    <form id="surveyForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>How did you hear about us?</label>
+            <select id="source" name="source" required>
+                <option value="">Select</option>
+                <option value="friend">Friend</option>
+                <option value="social_media">Social Media</option>
+                <option value="search_engine">Search Engine</option>
+                <option value="advertisement">Advertisement</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>What features do you like? (Select all that apply)</label>
+            <div>
+                <input type="checkbox" id="feature1" name="features" value="feature1">
+                <label for="feature1">Feature 1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="feature2" name="features" value="feature2">
+                <label for="feature2">Feature 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="feature3" name="features" value="feature3">
+                <label for="feature3">Feature 3</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Rate your experience (1 - 5)</label>
+            <div class="rating">
+                <input type="radio" id="rating1" name="rating" value="1">
+                <label for="rating1">1</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">2</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3">3</label>
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4">4</label>
+                <input type="radio" id="rating5" name="rating" value="5">
+                <label for="rating5">5</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="shortAnswer">What did you like most about our service?</label>
+            <input type="text" id="shortAnswer" name="shortAnswer" required>
+        </div>
+        <div class="form-group">
+            <label for="longAnswer">Additional comments or suggestions:</label>
+            <textarea id="longAnswer" name="longAnswer"
